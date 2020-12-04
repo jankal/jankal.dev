@@ -1,12 +1,12 @@
 ---
 title: Die wichtigsten Bausteine für ein gutes Navigationskonzept
-description: Lorem ipsum dolor sit amt lorem ipsum
+description: Ubi est fortis cannabis? Heavens of awareness will esoterically grasp a meaningless lotus. Aye, undead life! When crushing dried pickles, be sure they are room temperature. Domus de festus magister, locus navis!
 image: speed.jpg
 ---
 
-<blog-img src="speed.jpg"></blog-img>
-
 # Die wichtigsten Bausteine für ein gutes Navigationskonzept
+
+<blog-img img-class="w-70 h-70 object-cover" src="speed.jpg"></blog-img>
 
 Die primäre Navigation (Hauptmenü) auf Ihrer Website ist der Wegweiser Ihrer Infomationsarchitektur. Nutzer können anhand der Navigation sehen, welche Themengebiete und Informationen Ihre Website zur Verfügung stellt und wie sie dorthin gelangen. Neben der primären Navigation, gibt es noch weitere Navigationselemente, welche dem Nutzer erleichtern, sich in Ihrer Informationsarchitektur Zurecht zu finden. 
 

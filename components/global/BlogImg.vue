@@ -5,7 +5,7 @@
       type="image/webp"
     />
     <source :srcSet="require('~/assets/img/blog/' + src)" type="image/jpeg" />
-    <img :src="require('~/assets/img/blog/' + src)" />
+    <img :class="imgClass" :src="require('~/assets/img/blog/' + src)" />
   </picture>
 </template>
 
@@ -18,6 +18,11 @@ export default Vue.extend({
     src: {
       type: String,
       required: true
+    },
+    imgClass: {
+      type: [Object, Array, String],
+      required: false,
+      default: ''
     }
   }
 });

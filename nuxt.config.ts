@@ -2,6 +2,7 @@ import { $content } from '@nuxt/content';
 import { Feed } from 'feed';
 import { IContentDocument } from '@nuxt/content/types/content';
 import { NuxtConfig } from '@nuxt/types';
+import faviconConfig from './favicon.json';
 
 function arrayify<T>(dataOrArray: T[] | T) {
   if (!Array.isArray(dataOrArray)) {
@@ -70,8 +71,7 @@ const config: NuxtConfig = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    ]
   },
 
   env: {
@@ -121,8 +121,14 @@ const config: NuxtConfig = {
   googleFonts: {
     download: true,
     families: {
-      Roboto: true,
-      Raleway: true
+      Roboto: {
+        wght: '100..900',
+        ital: '100..900'
+      },
+      Raleway: {
+        wght: '100..900',
+        ital: '100..900'
+      }
     }
   },
 
@@ -139,7 +145,17 @@ const config: NuxtConfig = {
     // https://github.com/nuxt-community/sitemap-module
     '@nuxtjs/sitemap',
     // https://github.com/nuxt-community/feed-module
-    '@nuxtjs/feed'
+    '@nuxtjs/feed',
+    // https://github.com/pimlie/nuxt-rfg-icon
+    [
+      'nuxt-rfg-icon',
+      {
+        static: true,
+        staticPath: '/_favicons/',
+        masterPicture: 'assets/img/logo-sm.svg',
+        rfg: faviconConfig
+      }
+    ]
   ],
 
   i18n: {
@@ -148,6 +164,10 @@ const config: NuxtConfig = {
     vueI18n: {
       fallbackLocale: 'en',
       messages: require('./i18n')
+    },
+    parsePages: false,
+    pages: {
+      _tailwind: false
     }
   },
 

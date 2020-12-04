@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body {
+  font-family: Raleway, Roboto, sans-serif;
+}
+
 .dark body {
   @apply bg-gray-900 text-white;
 }
