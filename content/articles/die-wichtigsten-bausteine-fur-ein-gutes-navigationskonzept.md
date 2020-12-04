@@ -1,7 +1,10 @@
 ---
 title: Die wichtigsten Bausteine für ein gutes Navigationskonzept
-description: Test8237489237892347498
+description: Lorem ipsum dolor sit amt lorem ipsum
+image: speed.jpg
 ---
+
+<blog-img src="speed.jpg"></blog-img>
 
 # Die wichtigsten Bausteine für ein gutes Navigationskonzept
 

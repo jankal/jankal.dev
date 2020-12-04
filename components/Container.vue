@@ -6,6 +6,6 @@
 
 <style scoped>
 .container {
-  @apply flex justify-center items-center text-center mx-auto;
+  @apply justify-center items-center text-center mx-auto;
 }
 </style>

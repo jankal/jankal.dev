@@ -2,6 +2,23 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.dark-mode body {
+.dark body {
   @apply bg-gray-900 text-white;
+}
+
+.dark .dark\:prose-dark, .dark .dark\:prose-dark [class~="lead"] {
+  color: #e2e8f0;
+}
+
+.dark .dark\:prose-dark h2, .dark .dark\:prose-dark h3 {
+  color: #f7fafc;
+  border-bottom-color: #2d3748;
+}
+
+.dark .dark\:prose-dark h1 {
+  color: #f7fafc;
+}
+
+.dark .dark\:prose-dark a {
+  color: #f7fafc;
 }

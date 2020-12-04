@@ -24,10 +24,6 @@ export default Vue.extend({
         {
           title: this.$t('Imprint'),
           slug: 'imprint'
-        },
-        {
-          title: this.$t('Privacy'),
-          slug: 'privacy'
         }
       ]
     };
