@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="border rounded">
     <nuxt-link
       :to="localePath({ name: 'blog-slug', params: { slug: article.slug } })"
     >
