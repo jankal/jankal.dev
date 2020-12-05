@@ -35,7 +35,7 @@ export default class BlogSlug extends Vue {
     const title = makeTitle(this.article.title);
 
     const metaDefinition: MetaDefinition = {
-      url: 'https://zeraton.de/blog/' + this.article.slug,
+      url: 'https://jankal.dev/blog/' + this.article.slug,
       title
     };
 

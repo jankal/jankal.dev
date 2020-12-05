@@ -1,21 +1,26 @@
 <template>
-  <div class="border rounded">
+  <div
+    class="rounded shadow-lg dark:shadow-lg-white mb-9 border dark:border-gray-700 border-gray-200"
+  >
     <nuxt-link
       :to="localePath({ name: 'blog-slug', params: { slug: article.slug } })"
     >
-      <div class="flex items-center">
-        <div class="flex-initial">
-          <div class="rounded m-3 h-40 w-40">
+      <div class="flex md:flex-row flex-col">
+        <div class="flex-initial flex justify-center md:block">
+          <div class="rounded m-3 h-40 w-full md:w-40">
             <blog-img
-              img-class="h-full w-full object-cover rounded shadow-inner"
               v-if="article.image"
+              img-class="h-full w-full object-cover rounded shadow-inner"
+              :alt="`Image describing  '${article.title}'`"
               :src="article.image"
             />
           </div>
         </div>
-        <div class="flex-grow text-left ml-3">
-          <h2 class="font-medium text-2xl mb-2.5">{{ article.title }}</h2>
-          <p class="leading-relaxed">{{ article.description }}</p>
+        <div class="flex flex-grow text-left ml-3 items-center p-4">
+          <div>
+            <h2 class="font-medium text-2xl mb-2.5">{{ article.title }}</h2>
+            <p class="leading-relaxed">{{ article.description }}</p>
+          </div>
         </div>
       </div>
     </nuxt-link>

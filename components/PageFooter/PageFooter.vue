@@ -7,18 +7,31 @@
     >
       <toggle-dark-mode class="order-last md:order-none my-2" />
       <bottom-nav class="my-2" />
-      <span class="my-2 dark:text-gray-500">&copy; 2020 Alexander Jank</span>
+      <span class="my-2">&copy; {{ yearOutput }} Alexander Jank</span>
     </div>
   </footer>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { Component, Vue } from 'nuxt-property-decorator';
 import ToggleDarkMode from '~/components/PageFooter/ToggleDarkMode.vue';
 import BottomNav from '~/components/PageFooter/BottomNav.vue';
 
-export default Vue.extend({
+@Component({
   name: 'PageFooter',
   components: { ToggleDarkMode, BottomNav }
-});
+})
+export default class PageFooter extends Vue {
+  get currentYear() {
+    return new Date().getFullYear();
+  }
+
+  get yearOutput() {
+    if (this.currentYear === 2020) {
+      return 2020;
+    }
+
+    return `2020 - ${this.currentYear}`;
+  }
+}
 </script>

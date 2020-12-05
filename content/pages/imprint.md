@@ -1,3 +1,7 @@
+---
+title: Imprint
+description: Based on German law, I'm required to include this page.
+---
 # Impressum / Imprint
 
 Based on German law, I'm required to include this page.

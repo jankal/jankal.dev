@@ -1,5 +1,9 @@
 <template>
-  <button class="toggle-dark-mode" @click="toggleMode">
+  <button
+    class="toggle-dark-mode"
+    aria-label="Toggle dark mode"
+    @click="toggleMode"
+  >
     <fa v-if="$colorMode.value === 'light'" :icon="faSun" />
     <fa v-if="$colorMode.value === 'dark'" :icon="faMoon" />
   </button>

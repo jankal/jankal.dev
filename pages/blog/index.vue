@@ -41,7 +41,8 @@ export default class BlogIndex extends Vue {
     const title = makeTitle('Blog');
     const url = process.env.baseUrl + '/blog';
 
-    const description = 'Blogging about technology and business.';
+    const description =
+      "Alexander Jank's Blog: Sharing knowledge about Vue.js and TypeScript.";
 
     const webPageData = webPage(url, title);
 

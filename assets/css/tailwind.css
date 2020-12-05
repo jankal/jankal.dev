@@ -26,3 +26,27 @@ body {
 .dark .dark\:prose-dark a {
   color: #f7fafc;
 }
+
+.nuxt-content pre[class*="language-"], .nuxt-content code[class*="language-"] {
+  @apply bg-gray-800 static;
+
+  text-shadow: none;
+}
+
+.nuxt-content pre[class*="language-"] .token.operator {
+  background: none;
+}
+
+.nuxt-content .nuxt-content-highlight {
+  @apply relative;
+}
+
+/* Style filename span added by @nuxt/content */
+.nuxt-content .nuxt-content-highlight > .filename {
+  @apply absolute right-0 top-0 text-gray-100 z-10 font-mono text-sm tracking-tight leading-none mr-4 mt-3;
+}
+
+/* Add top padding to code blocks with filename */
+.nuxt-content .nuxt-content-highlight > .filename + pre[class*="language-"] {
+  @apply pt-8;
+}

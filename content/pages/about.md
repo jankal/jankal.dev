@@ -1,3 +1,8 @@
+---
+title: About me
+description:
+  This page holds information about Alexander Jank, a web developer working with Vue.js and TypeScript. He is the founder of Munich based software development agency Zeraton.
+---
 # About me
 
 Hey, I'm Alex 👋!
@@ -6,9 +11,9 @@ I've been developing websites and web-apps for <client-only><years-time date="20
 During this time, I also founded the boutique software development agency <a href="https://zeraton.de">Zeraton</a>.
 
 The main technologies and frameworks I use are:
-- PHP (5 trough 8)
-  - Laravel (5 trough 8)
-  - Symfony (3 trough 5)
+- PHP (5 through 8)
+  - Laravel (5 through 8)
+  - Symfony (3 through 5)
   - Cockpit CMS by <a href="https://twitter.com/agentejo">@agentejo</a>
   - Kirby CMS by <a href="https://twitter.com/bastianallgeier">@bastianallgeier</a>
 - JavaScript / TypeScript (Frontend & Backend)

@@ -1,6 +1,6 @@
 <template>
   <div class="flex branding text-uppercase">
-    <nuxt-link :to="localePath({ name: 'index' })">
+    <nuxt-link :to="localePath({ name: 'index' })" aria-label="Go home">
       <logo class="logo py-3 fill-current hidden sm:block" />
       <logo-sm class="logo-sm py-3 h-auto fill-current sm:hidden" />
     </nuxt-link>

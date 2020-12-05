@@ -3,6 +3,7 @@ import { Feed } from 'feed';
 import { IContentDocument } from '@nuxt/content/types/content';
 import { NuxtConfig } from '@nuxt/types';
 import faviconConfig from './favicon.json';
+import translations from './i18n';
 
 function arrayify<T>(dataOrArray: T[] | T) {
   if (!Array.isArray(dataOrArray)) {
@@ -30,8 +31,7 @@ function makeFeed(link: string) {
       copyright: 'All rights reserved 2020, Alexander Jank',
       title: 'jankal.dev',
       link: 'https://jankal.dev' + link,
-      description:
-        'Interesting technology articles for software developers working in web development.'
+      description: "Alexander Jank's Blog: Articles about Vue and TypeScript."
     };
 
     const articles = arrayify(
@@ -70,12 +70,29 @@ const config: NuxtConfig = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Alexander Jank is a web developer working with Vue.js and TypeScript. He is the founder of Munich based software development agency Zeraton.'
+      }
+    ],
+    link: [
+      {
+        rel: 'alternate',
+        type: 'application/rss+xml',
+        href: '/feed.xml'
+      },
+      {
+        rel: 'alternate',
+        type: 'application/rss+json',
+        href: '/feed.json'
+      }
     ]
   },
 
   env: {
-    siteTitle: 'jankal-me',
+    siteTitle: 'jankal.dev',
     baseUrl: 'https://jankal.dev'
   },
 
@@ -128,6 +145,9 @@ const config: NuxtConfig = {
       Raleway: {
         wght: '100..900',
         ital: '100..900'
+      },
+      'Source Code Pro': {
+        wght: '100..900'
       }
     }
   },
@@ -163,7 +183,7 @@ const config: NuxtConfig = {
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
-      messages: require('./i18n')
+      messages: translations
     },
     parsePages: false,
     pages: {
@@ -207,7 +227,13 @@ const config: NuxtConfig = {
   },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-coldark-dark.css'
+      }
+    }
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {}

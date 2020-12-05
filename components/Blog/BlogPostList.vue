@@ -1,5 +1,5 @@
 <template>
-  <ul class="list-none mb-8 max-w-7xl">
+  <ul class="list-none my-4 max-w-7xl">
     <li v-for="article of articles" :key="article.slug">
       <blog-post-preview :article="article" />
     </li>
