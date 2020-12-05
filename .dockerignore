@@ -1,0 +1,10 @@
+node_modules
+.git
+.nuxt
+dist
+.yalc
+.github
+assets/css/fonts.css
+assets/fonts
+static/favicon.ico
+static/_favicons
