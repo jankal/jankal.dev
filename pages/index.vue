@@ -7,7 +7,7 @@
         <p>
           {{
             $t(
-              'This is, where I write about my journey. Mainly I write about TypeScript and Nuxt.js.'
+              'This is, where I write about my journey. Mainly I write about TypeScript and Vue.js.'
             )
           }}
         </p>
