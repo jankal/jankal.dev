@@ -2,22 +2,42 @@
   <container>
     <headline class="mb-7" />
     <link-box :icon="faNewspaper" :to="localePath({ name: 'blog' })">
-      <h2>Blog</h2>
+      <h2>{{ $t('Blog') }}</h2>
       <div class="prose dark:prose-dark">
         <p>
-          This is, where I write about my journey. Mainly I write about
-          TypeScript and Nuxt.js.
+          {{
+            $t(
+              'This is, where I write about my journey. Mainly I write about TypeScript and Nuxt.js.'
+            )
+          }}
         </p>
       </div>
     </link-box>
     <link-box :icon="faBuilding" href="https://zeraton.de">
-      <h2>Company</h2>
+      <h2>{{ $t('Company') }}</h2>
       <div class="prose dark:prose-dark">
         <p>
-          I'm proud to be the founder of the boutique web agency Zeraton based
-          in western Munich.<br />
-          Founded in 2017, we provide development services for small and big
-          projects.
+          {{
+            $t(
+              "I'm proud to be the founder of the boutique web agency Zeraton based in western Munich."
+            )
+          }}<br />
+          {{
+            $t(
+              'Founded in 2017, we provide development services for small and big projects.'
+            )
+          }}
+        </p>
+      </div>
+    </link-box>
+    <link-box
+      :icon="faEnvelope"
+      :to="localePath({ name: 'slug', params: { slug: 'contact' } })"
+    >
+      <h2>{{ $t('Contact') }}</h2>
+      <div class="prose dark:prose-dark">
+        <p>
+          {{ $t('Want to drop me a message? - Here you go!') }}
         </p>
       </div>
     </link-box>
@@ -26,8 +46,11 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { faNewspaper } from '@fortawesome/free-solid-svg-icons/faNewspaper';
-import { faBuilding } from '@fortawesome/free-regular-svg-icons/faBuilding';
+import {
+  faNewspaper,
+  faBuilding,
+  faEnvelope
+} from '@fortawesome/free-regular-svg-icons';
 import Container from '~/components/Container.vue';
 import Headline from '~/components/Home/Headline.vue';
 import LinkBox from '~/components/Home/LinkBox.vue';
@@ -42,7 +65,8 @@ export default Vue.extend({
   data() {
     return {
       faNewspaper,
-      faBuilding
+      faBuilding,
+      faEnvelope
     };
   },
   head() {

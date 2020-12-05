@@ -14,6 +14,11 @@
           >
             About
           </nav-list-item>
+          <nav-list-item
+            :to="localePath({ name: 'slug', params: { slug: 'contact' } })"
+          >
+            Contact
+          </nav-list-item>
         </nav-list>
       </div>
     </div>

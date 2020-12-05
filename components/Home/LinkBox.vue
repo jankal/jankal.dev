@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-20 last:mb-0">
+  <div class="md:mb-20 md:last:mb-0">
     <component :is="linkComponent" v-bind="linkProps">
       <div
         class="rounded flex flex-col md:flex-row bg-gray-200 dark:bg-gray-800 p-6"

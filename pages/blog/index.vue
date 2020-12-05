@@ -1,6 +1,8 @@
 <template>
   <container>
-    <h1 class="font-bold leading-loose text-4xl mb-4">Blog Posts</h1>
+    <h1 class="font-bold leading-loose text-4xl mb-4">
+      {{ $t('Blog Posts') }}
+    </h1>
     <div class="flex justify-center">
       <blog-post-list class="flex-1" :articles="articles" />
     </div>

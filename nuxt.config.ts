@@ -175,7 +175,8 @@ const config: NuxtConfig = {
         masterPicture: 'assets/img/logo-sm.svg',
         rfg: faviconConfig
       }
-    ]
+    ],
+    '@nuxtjs/axios'
   ],
 
   i18n: {
