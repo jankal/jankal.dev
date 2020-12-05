@@ -13,6 +13,7 @@ COPY . /app
 WORKDIR /app
 RUN HUSKY_SKIP_INSTALL=1 yarn install --frozen-lockfile
 RUN yarn run build
+RUN yarn run generate
 
 # Expose the app port
 EXPOSE 3000
