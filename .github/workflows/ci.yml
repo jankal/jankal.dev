@@ -28,6 +28,9 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
+      - name: Install yarn
+        run: npm install -g yarn
+
       - name: Cache node_modules 📦
         uses: actions/cache@v2
         with:
@@ -41,3 +44,6 @@ jobs:
 
       - name: Run linter 👀
         run: yarn run lint
+
+      - name: Uninstall yarn
+        run: npm uninstall -g yarn

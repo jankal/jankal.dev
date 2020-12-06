@@ -24,6 +24,9 @@ jobs:
         with:
           node-version: 14
 
+      - name: Install yarn
+        run: npm install -g yarn
+
       - name: Cache node_modules 📦
         uses: actions/cache@v2
         with:
@@ -47,3 +50,5 @@ jobs:
           localDir: "dist"
           remoteDir: "."
 
+      - name: Uninstall yarn
+        run: npm uninstall -g yarn
