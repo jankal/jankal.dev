@@ -2,7 +2,7 @@ name: Anchore Container Scan
 on: push
 jobs:
   Anchore-Build-Scan:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - name: Checkout the code
       uses: actions/checkout@v2
