@@ -43,4 +43,5 @@ jobs:
           remoteDir: "."
 
       - name: Uninstall yarn
+        if: always()
         run: npm uninstall -g yarn
