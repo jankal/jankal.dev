@@ -176,7 +176,15 @@ const config: NuxtConfig = {
         rfg: faviconConfig
       }
     ],
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    [
+      'nuxt-matomo',
+      {
+        matomoUrl: 'https://zeralytics.zsites.de/ ',
+        siteId: 7,
+        doNotTrack: true
+      }
+    ]
   ],
 
   i18n: {
