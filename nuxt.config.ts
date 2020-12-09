@@ -180,7 +180,7 @@ const config: NuxtConfig = {
     [
       'nuxt-matomo',
       {
-        matomoUrl: 'https://zeralytics.zsites.de/ ',
+        matomoUrl: 'https://zeralytics.zsites.de/',
         siteId: 7,
         doNotTrack: true
       }
@@ -232,7 +232,8 @@ const config: NuxtConfig = {
     hostname: 'https://jankal.dev',
     cacheTime: 1000 * 60 * 30,
     gzip: true,
-    routes: staticRoutes
+    routes: staticRoutes,
+    trailingSlash: true
   },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
