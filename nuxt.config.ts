@@ -227,6 +227,10 @@ const config: NuxtConfig = {
     }
   },
 
+  router: {
+    trailingSlash: true
+  },
+
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://jankal.dev',
