@@ -85,7 +85,7 @@
     "stylelint": "13.8.0",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "20.0.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@2.0.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@2.0.2",
     "ts-jest": "26.4.4",
     "vue-class-component": "7.2.6",
     "vue-jest": "3.0.7",
