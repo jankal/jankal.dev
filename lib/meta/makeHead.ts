@@ -14,7 +14,7 @@ export function makeHead({
     scripts.push({
       type: 'application/ld+json',
       innerHTML: JSON.stringify({
-        '@context': ['http://schema.org'],
+        '@context': 'https://schema.org',
         ...data
       })
     });
