@@ -73,7 +73,7 @@
     "lint-staged": "10.5.3",
     "lqip-loader": "2.2.1",
     "node-sass": "5.0.0",
-    "nuxt-property-decorator": "2.8.8",
+    "nuxt-property-decorator": "2.9.1",
     "postcss": "7.0.35",
     "prettier": "2.2.1",
     "prism-themes": "1.5.0",
