@@ -30,7 +30,7 @@
     "@nuxt/typescript-runtime": "2.0.0",
     "@nuxtjs/axios": "5.12.5",
     "@nuxtjs/fontawesome": "1.1.2",
-    "@tailwindcss/typography": "0.3.1",
+    "@tailwindcss/typography": "0.4.0",
     "core-js": "3.8.2",
     "date-fns": "2.16.1",
     "nuxt": "2.14.12",
