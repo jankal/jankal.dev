@@ -80,7 +80,7 @@
     "responsive-loader": "2.3.0",
     "sass-loader": "10.1.1",
     "schema-dts": "0.8.2",
-    "sharp": "0.27.0",
+    "sharp": "0.27.1",
     "sqip-loader": "1.0.0",
     "stylelint": "13.9.0",
     "stylelint-config-prettier": "8.0.2",
