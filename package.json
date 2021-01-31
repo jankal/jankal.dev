@@ -35,7 +35,7 @@
     "date-fns": "2.16.1",
     "nuxt": "2.14.12",
     "nuxt-i18n": "6.18.0",
-    "nuxt-matomo": "1.2.3",
+    "nuxt-matomo": "1.2.4",
     "nuxt-rfg-icon": "0.6.4",
     "slugify": "1.4.6"
   },
