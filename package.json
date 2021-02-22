@@ -37,7 +37,7 @@
     "nuxt-i18n": "6.20.2",
     "nuxt-matomo": "1.2.4",
     "nuxt-rfg-icon": "0.6.4",
-    "slugify": "1.4.6"
+    "slugify": "1.4.7"
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "1.4.0",
