@@ -82,7 +82,7 @@
     "schema-dts": "0.8.2",
     "sharp": "0.27.1",
     "sqip-loader": "1.0.0",
-    "stylelint": "13.10.0",
+    "stylelint": "13.11.0",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "20.0.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@2.0.3",
