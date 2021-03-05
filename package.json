@@ -31,7 +31,7 @@
     "@nuxtjs/fontawesome": "1.1.2",
     "@tailwindcss/typography": "0.4.0",
     "core-js": "3.9.1",
-    "date-fns": "2.18.0",
+    "date-fns": "2.19.0",
     "nuxt": "2.15.2",
     "nuxt-i18n": "6.20.4",
     "nuxt-matomo": "1.2.4",
