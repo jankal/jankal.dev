@@ -13,7 +13,7 @@
         </p>
       </div>
     </link-box>
-    <link-box :icon="faBuilding" href="https://zeraton.de">
+    <link-box :icon="faBuilding" href="https://zeraton.de" rel="noopener">
       <h2>{{ $t('Company') }}</h2>
       <div class="prose dark:prose-dark">
         <p>

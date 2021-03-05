@@ -1,6 +1,6 @@
 <template>
   <div class="md:mb-20 md:last:mb-0">
-    <component :is="linkComponent" v-bind="linkProps">
+    <component :is="linkComponent" v-bind="linkProps" :rel="rel">
       <div
         class="rounded flex flex-col md:flex-row bg-gray-200 dark:bg-gray-800 p-6"
       >
@@ -45,6 +45,13 @@ export default class LinkBox extends Vue {
     default: () => null
   })
   readonly href!: null | string;
+
+  @Prop({
+    type: String,
+    required: false,
+    default: () => null
+  })
+  readonly rel!: string | null;
 
   @Prop({
     type: [Object, String, Array],
