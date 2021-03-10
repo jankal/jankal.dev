@@ -33,7 +33,7 @@
     "core-js": "3.9.1",
     "date-fns": "2.19.0",
     "nuxt": "2.15.2",
-    "nuxt-i18n": "6.20.6",
+    "nuxt-i18n": "6.21.0",
     "nuxt-matomo": "1.2.4",
     "nuxt-rfg-icon": "0.6.4",
     "slugify": "1.4.7"
