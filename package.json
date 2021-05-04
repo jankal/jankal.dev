@@ -75,7 +75,7 @@
     "nuxt-property-decorator": "2.9.1",
     "postcss": "7.0.35",
     "prettier": "2.2.1",
-    "prism-themes": "1.6.0",
+    "prism-themes": "1.7.0",
     "responsive-loader": "2.3.0",
     "sass-loader": "10.1.1",
     "schema-dts": "0.8.2",
