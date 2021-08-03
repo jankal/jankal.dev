@@ -78,7 +78,7 @@
     "prism-themes": "1.6.0",
     "responsive-loader": "2.3.0",
     "sass-loader": "10.1.1",
-    "schema-dts": "0.8.2",
+    "schema-dts": "0.10.0",
     "sharp": "0.27.2",
     "sqip-loader": "1.0.0",
     "stylelint": "13.12.0",

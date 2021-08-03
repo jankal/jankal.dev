@@ -14121,10 +14121,10 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schema-dts@0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-0.8.2.tgz#4a478eec4119023456e3c41b23744af69ff7a8fc"
-  integrity sha512-whRg7QF9wmPfrwAi4NRT/bjMBIdHvzpr4excNN00hn+U2aFXx9NB3JKfooUMJLDqpGEqnZpA61f5muw9lQ50ZA==
+schema-dts@0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-0.10.0.tgz#7e1a2ba6ba5cfe12c0cd6a8e43b6c23695c2391d"
+  integrity sha512-swqBU3bFgtz/b+ldP/LEshp4clgOt130uKIgVOGLx+K3lYGUL8censjA9nQX8+jMz1oU/AeNktCIClTaNLuJzw==
 
 schema-utils@2.7.0:
   version "2.7.0"
