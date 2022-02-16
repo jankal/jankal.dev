@@ -77,7 +77,7 @@
     "prettier": "2.2.1",
     "prism-themes": "1.6.0",
     "responsive-loader": "2.3.0",
-    "sass-loader": "10.1.1",
+    "sass-loader": "12.6.0",
     "schema-dts": "0.8.2",
     "sharp": "0.27.2",
     "sqip-loader": "1.0.0",
